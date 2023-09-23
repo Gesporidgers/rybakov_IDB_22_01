@@ -25,10 +25,12 @@ public class TestScript : MonoBehaviour
     }
     void inst()
     {
+        float moveX = 0;
         for(int i=0; i < 10; i++)
         {
-            Vector3 nv = new Vector3(i, 0, 0);
+            Vector3 nv = new Vector3(moveX, 0, 0);
             Instantiate(gameObject, nv,gameObject.transform.rotation);
+            moveX += 4;
         }
     }
 }

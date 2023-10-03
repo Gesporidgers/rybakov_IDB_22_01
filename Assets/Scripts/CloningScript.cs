@@ -17,16 +17,16 @@ public class TestScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            //cube = GameObject.Find("Cube_spec");
-            inst();
-        }
+        //if (Input.GetKeyDown(KeyCode.C))
+        //{
+        //    //cube = GameObject.Find("Cube_spec");
+        //    inst();
+        //}
     }
-    void inst()
+    public void inst()
     {
         int moveX = 0;
-        int moveY = 0;
+        int moveY = 2;
         for(int i=0; i < 5; i++)
         {
             moveX = 0;

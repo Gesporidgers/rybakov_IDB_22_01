@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class TestScript : MonoBehaviour
 {
-    public GameObject cube;
+    //public GameObject cube;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +23,7 @@ public class TestScript : MonoBehaviour
             inst();
         }
     }
-    void inst()
+    public void inst()
     {
         for(int i=0; i < 10; i++)
         {

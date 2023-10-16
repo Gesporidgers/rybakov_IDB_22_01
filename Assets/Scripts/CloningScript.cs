@@ -27,7 +27,7 @@ public class TestScript : MonoBehaviour
     {
         for(int i=0; i < 10; i++)
         {
-            Vector3 nv = new Vector3(i, 0, 0);
+            Vector3 nv = new Vector3(i, 2, 0);
             Instantiate(gameObject, nv,gameObject.transform.rotation);
         }
     }

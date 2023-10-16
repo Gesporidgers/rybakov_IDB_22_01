@@ -8,7 +8,7 @@ public class Moving : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moving = Time.deltaTime *0.5f;
+        moving = Time.deltaTime *0.2f;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -18,8 +18,7 @@ public class Moving : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        Vector3 pos = new Vector3(0, 0, moving);
-        gameObject.transform.Translate(pos);
+            Vector3 pos = new Vector3(moving, 0,0 );
+            gameObject.transform.Translate(pos);
     }
 }
